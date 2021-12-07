@@ -7,12 +7,12 @@ from flask_mail import Mail
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'supersecretkeyformyappdonttrytohack'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/inventorytwo'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/inventorytwo' #DATABASE CONNECTION
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'rahulprojectmail@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Inventory@app1234'
+app.config['MAIL_USERNAME'] = 'YOUR MAIL ID HERE'
+app.config['MAIL_PASSWORD'] = 'YOUR PASSWORD'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
